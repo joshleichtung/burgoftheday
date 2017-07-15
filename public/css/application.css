@@ -1,0 +1,24 @@
+body {
+  background-image: url(https://i.ytimg.com/vi/a40xP-CvBAw/maxresdefault.jpg);
+  background-size: cover;
+}
+
+#container {
+  background-color:rgba(244, 244, 237, 0.5);
+/*  background-color: beige; */
+  background-image: none;
+  text-align: center;
+  width:800px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+#container form {
+  margin: 16px;
+  padding: 16px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
