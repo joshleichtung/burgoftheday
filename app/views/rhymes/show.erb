@@ -1,0 +1,22 @@
+<h2>Burg of the day is:</h2>
+<form action="/tweets" method="POST">
+<div class="burg-of-the-day">
+  The
+<% @words.each do |word| %>
+  <select name="<%= word[:original] %>">
+    <option value="<%= word[:original] %>">
+    <%= word[:original] %>
+    </option>
+    <% word[:rhymes].each do |rhyme| %>
+      <option value="<%= rhyme %>">
+      <%= rhyme %>
+      </option>
+  <% end %>
+  </select>
+<% end %>
+Burger
+<br>
+<br>
+<button type="submit">Tweet it!</button>
+</form>
+</div> 
